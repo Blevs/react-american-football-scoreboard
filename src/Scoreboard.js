@@ -1,5 +1,6 @@
 import React from 'react';
 import BottomRow from "./BottomRow.js";
+import Timer from './Timer.js';
 
 function Scoreboard(props) {
   const {awayScore, homeScore} = props;
@@ -16,7 +17,7 @@ function Scoreboard(props) {
 
           <div className="home__score">{homeScore}</div>
         </div>
-        <div className="timer">00:03</div>
+        <Timer />
         <div className="away">
           <h2 className="away__name">Tigers</h2>
           <div className="away__score">{awayScore}</div>
